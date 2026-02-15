@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panaderia Santos</title>   
+    <title>Panaderia Angmar</title>   
     <link rel="stylesheet" href="/estilo.css">
     <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
     <script src="/script.js" defer></script>
@@ -11,11 +11,11 @@
 
 <body>
     <header style= "position: sticky";>
-        <h1>Panaderia Santos</h1>
+        <h1>Panaderia Angmar</h1>
         <nav>
-            <a href="/Sobre">Sobre</a>
-            <a href="/Produtos">Productos</a>
-            <a href="/index">Home</a>
+            <a href="/Sobre">NOSOTROS</a>
+            <a href="/Produtos">PRODUCTOS</a>
+            <a href="/index">INICIO</a>
             <button class="carrinho cart-icon" id="carrinho-icon" onclick="toggleCart()">
                 <img src="/imagens/carrinho-de-compras.png" alt="Carrinho de Compras">
                 <span id="cart-count" class="cart-count hidden">0</span>  
@@ -25,10 +25,10 @@
         <div class="container-mobile" id="container-mobile">
         <img src="/imagens/fechar.png" alt="menu mobile" id="fechar">
             <ul>
-                <li><a href="/Sobre">Sobre</a></li>
-                <li><a href="/Produtos">Productos</a></li>
-                <li><a href="/index">Home</a></li>
-                <li><a onclick="openCartFromMenu()">Carrito</a></li>
+                <li><a href="/Sobre">NOSOTROS</a></li>
+                <li><a href="/Produtos">PRODUCTOS</a></li>
+                <li><a href="/index">INICIO</a></li>
+                <li><a onclick="openCartFromMenu()">CARRITO</a></li>
             </ul>
         </div> 
         <div class="abrir-menu" id="abrir-menu-mob">
@@ -47,7 +47,7 @@
         <ul class="faq">
             <li>
                 <input type="radio" name="acordeon" id="primeira">
-                <label for="primeira"><span>1</span> Cuales son los horarios de funcionamento en la Panaderia Santos?</label>
+                <label for="primeira"><span>1</span> Cuales son los horarios de funcionamento en la Panaderia Angmar?</label>
                 <div class="respostas">
                     <p>Estamos abiertos de segunda a sábado, de 6h a 20h, y los domingos, de 7h a 14h.</p>
                 </div>
@@ -55,7 +55,7 @@
         
             <li>
                 <input type="radio" name="acordeon" id="segunda">
-                <label for="segunda"><span>2</span> Ustedes oferecen entrega de productos?</label>
+                <label for="segunda"><span>2</span> Ustedes ofrecen entrega de productos?</label>
                 <div class="respostas">
                     <p>No por el momento, no ofrecemos entrega. Estamos trabajando para implementar ese servicio en noviembre de 2026.</p>
                 </div>
@@ -71,9 +71,9 @@
         
             <li>
                 <input type="radio" name="acordeon" id="quarta">
-                <label for="quarta"><span>4</span> Puedo hacer encomendas para eventos?</label>
+                <label for="quarta"><span>4</span> Puedo hacer envios para eventos?</label>
                 <div class="respostas">
-                    <p>Si! Aceptamos encomendas para eventos, como fiestas e reuniones. Entre en contacto con nosotros para más informarción y detalles.</p>
+                    <p>Si! Aceptamos envios para eventos como fiestas, reuniones y celebraciones. Entre en contacto con nosotros para más informarción y detalles.</p>
                 </div>
             </li>
        
@@ -91,7 +91,7 @@
 
     <div class="overlay" onclick="toggleCart()"></div>
     <footer class="container-fundo">
-        <span style="background-color: rgb(255, 255, 255); max-width: 1920px;">&copy; Todos los productos reservados</span>
+        <span style="background-color: rgb(224, 212, 212); max-width: 1920px;">&copy; Todos los productos reservados</span>
     </footer>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
