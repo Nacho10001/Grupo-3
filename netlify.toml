@@ -1,0 +1,5 @@
+# netlify.toml
+[[redirects]]
+  from = "/produto/*"
+  to   = "/Produtos.html"
+  status = 200
