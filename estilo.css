@@ -213,6 +213,45 @@ nav a:focus {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.nosotros {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.nosotros h2 {
+  color: #c68642;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.nosotros p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+
+.nosotros-datos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.nosotros-datos div {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.nosotros-datos h3 {
+  color: #c68642;
+  margin-bottom: 10px;
+}
+
 .card img {
     position: absolute;
     top: 0;
@@ -2053,6 +2092,24 @@ form {
 
 }
 }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 60px;
+  background-color: #f5f5f5;
+}
+
+.producto {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
 @media (max-width: 840px) {
     header {
         padding: 2px;

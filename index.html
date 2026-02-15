@@ -20,15 +20,18 @@
 <body>
     <header>
         <h1>Angmar</h1>
-        <nav>
-            <a href="/Sobre">NOSOTROS</a>
-            <a href="/FAQ">DUDAS</a>
-            <a href="/Produtos">PRODUCTOS</a>
-            <button class="carrinho cart-icon" id="carrinho-icon" onclick="toggleCart()">
-                <img src="/imagens/carrinho-de-compras.png" alt="Carrinho de Compras">
-                <span id="cart-count" class="cart-count hidden">0</span>  
-            </button>
-        </nav>
+       <nav>
+  <a href="#nosotros">NOSOTROS</a>
+  <a href="FAQ.html">DUDAS</a>
+  <a href="productos.html">PRODUCTOS</a>
+
+  <button class="carrinho cart-icon" id="carrinho-icon" onclick="toggleCart()">
+    <img src="imagens/carrinho-de-compras.png" alt="Carrito de Compras">
+    <span id="cart-count" class="cart-count hidden">0</span>  
+  </button>
+</nav>
+
+
     <nav class="nav-mob">
         <div class="container-mobile" id="container-mobile">
         <img src="/imagens/fechar.png" alt="menu mobile" id="fechar">
@@ -250,6 +253,32 @@
     <img id="catalogo-img" src="imagens/comprando-na-padaria.png" alt="">
     </div>
 
+<section id="nosotros" class="nosotros">
+  <h2>Sobre Nosotros</h2>
+
+  <p>
+    Somos una empresa peruana dedicada a la venta de productos de calidad,
+    comprometidos con brindar el mejor servicio a nuestros clientes.
+  </p>
+
+  <div class="nosotros-datos">
+    <div>
+      <h3>📍 Ubicación</h3>
+      <p>Cajamarca – Perú</p>
+    </div>
+
+    <div>
+      <h3>⏰ Horarios</h3>
+      <p>Lunes a Sábado: 6am – 8pm</p>
+      <p>Domingos: 7am – 2pm</p>
+    </div>
+
+    <div>
+      <h3>📞 Contacto</h3>
+      <p>WhatsApp disponible</p>
+    </div>
+  </div>
+</section>
 
     <section id="formulario">
         <div class="container-form">
