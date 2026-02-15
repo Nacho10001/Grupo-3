@@ -6,12 +6,12 @@ $user = getenv('DB_USER');
 $password = getenv('DB_PASSWORD');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nome = trim($_POST['nome'] ?? '');
+    $name = trim($_POST['name'] ?? '');
     $email = trim($_POST['email'] ?? '');
     $atualizacoes = isset($_POST['atualizacoes']);
 
-    if (empty($nome) || empty($email) || !$atualizacoes) {
-        echo "Por favor, preencha todos os campos obrigatórios.";
+    if (empty($name) || empty($email) || !$atualizacoes) {
+        echo "Por favor, rellena todos los campos obligatorios.";
         exit;
     }
 
@@ -24,8 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $pdo = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $stmt = $pdo->prepare("INSERT INTO formulario (nome, email) VALUES (:nome, :email)");
-        $stmt->execute([':nome' => $nome, ':email' => $email]);
+        $stmt = $pdo->prepare("INSERT INTO formulario (name, email) VALUES (:name, :email)");
+        $stmt->execute([':name' => $name, ':email' => $email]);
 
         // Exibe mensagem com contagem regressiva
         echo '<!DOCTYPE html>
@@ -57,9 +57,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     } catch (PDOException $e) {
         if ($e->getCode() == '23505') {
-            echo "Esse email já está cadastrado.";
+            echo "Esta dirección de correo electrónico ya está registrada.";
         } else {
-            echo "Erro ao conectar ou inserir dados: " . $e->getMessage();
+            echo "Error al conectar o insertar datos: " . $e->getMessage();
         }
         exit;
     }

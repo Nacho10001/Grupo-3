@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padaria Santos</title>   
+    <title>Panaderia Santos</title>   
     <link rel="stylesheet" href="/estilo.css">
     <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
     <script src="/script.js" defer></script>
@@ -11,10 +11,10 @@
 
 <body>
     <header style= "position: sticky";>
-        <h1>Padaria Santos</h1>
+        <h1>Panaderia Santos</h1>
         <nav>
             <a href="/Sobre">Sobre</a>
-            <a href="/Produtos">Produtos</a>
+            <a href="/Produtos">Productos</a>
             <a href="/index">Home</a>
             <button class="carrinho cart-icon" id="carrinho-icon" onclick="toggleCart()">
                 <img src="/imagens/carrinho-de-compras.png" alt="Carrinho de Compras">
@@ -26,9 +26,9 @@
         <img src="/imagens/fechar.png" alt="menu mobile" id="fechar">
             <ul>
                 <li><a href="/Sobre">Sobre</a></li>
-                <li><a href="/Produtos">Produtos</a></li>
+                <li><a href="/Produtos">Productos</a></li>
                 <li><a href="/index">Home</a></li>
-                <li><a onclick="openCartFromMenu()">Carrinho</a></li>
+                <li><a onclick="openCartFromMenu()">Carrito</a></li>
             </ul>
         </div> 
         <div class="abrir-menu" id="abrir-menu-mob">
@@ -42,46 +42,46 @@
     <div class="lista-interativa" id="lista"></div>
     
     <div class="perguntas-frequentes">
-        <h1>Perguntas frequentes</h1>
+        <h1>Preguntas frequentes</h1>
 
         <ul class="faq">
             <li>
                 <input type="radio" name="acordeon" id="primeira">
-                <label for="primeira"><span>1</span> Quais são os horários de funcionamento da Padaria Santos?</label>
+                <label for="primeira"><span>1</span> Cuales son los horarios de funcionamento en la Panaderia Santos?</label>
                 <div class="respostas">
-                    <p>Estamos abertos de segunda a sábado, das 6h às 20h, e aos domingos, das 7h às 14h.</p>
+                    <p>Estamos abiertos de segunda a sábado, de 6h a 20h, y los domingos, de 7h a 14h.</p>
                 </div>
             </li>
         
             <li>
                 <input type="radio" name="acordeon" id="segunda">
-                <label for="segunda"><span>2</span> Vocês oferecem entrega de produtos?</label>
+                <label for="segunda"><span>2</span> Ustedes oferecen entrega de productos?</label>
                 <div class="respostas">
-                    <p>No momento, não oferecemos entrega. Estamos trabalhando para implementar esse serviço em novembro de 2025. Enquanto isso, convidamos você a visitar nossa loja em Lote 290 - Santa Luzia, Brasília - DF!</p>
+                    <p>No por el momento, no ofrecemos entrega. Estamos trabajando para implementar ese servicio en noviembre de 2026.</p>
                 </div>
             </li>
         
             <li>
                 <input type="radio" name="acordeon" id="terceira">
-                <label for="terceira"><span>3</span> Quais tipos de produtos vocês vendem?</label>
+                <label for="terceira"><span>3</span> Que tipos de productos ustedes venden?</label>
                 <div class="respostas">
-                    <p>Oferecemos uma variedade de pães artesanais, bolos, salgados e outros produtos frescos. Confira nosso Cardápio para mais detalhes!</p>
+                    <p>Ofrecemos una gran variedad de panes artesanales, kekes, entre otros productos frescos.</p>
                 </div>
             </li>
         
             <li>
                 <input type="radio" name="acordeon" id="quarta">
-                <label for="quarta"><span>4</span> Posso fazer encomendas para eventos?</label>
+                <label for="quarta"><span>4</span> Puedo hacer encomendas para eventos?</label>
                 <div class="respostas">
-                    <p>Sim! Aceitamos encomendas para eventos, como festas e reuniões. Entre em contato pelo telefone (61) 9609-7153 ou e-mail padariasantosoficial@gmail.com para detalhes.</p>
+                    <p>Si! Aceptamos encomendas para eventos, como fiestas e reuniones. Entre en contacto con nosotros para más informarción y detalles.</p>
                 </div>
             </li>
        
             <li>
                 <input type="radio" name="acordeon" id="quinta">
-                <label for="quinta"><span>5</span> Vocês têm opções sem glúten ou veganas?</label>
+                <label for="quinta"><span>5</span> Tienen más opciones sin glúten o veganas?</label>
                 <div class="respostas">
-                    <p>Atualmente, estamos desenvolvendo opções sem glúten e veganas. Fique de olho em nossas atualizações no site ou nas redes sociais!</p>
+                    <p>Actualmente, estamos desenvolviendo opciones sin glúten y veganas. Pero subimos nuestras actualicaciones y noticias a nuestras redes sociales como In!</p>
                 </div>
             </li>
         </ul>
@@ -91,7 +91,7 @@
 
     <div class="overlay" onclick="toggleCart()"></div>
     <footer class="container-fundo">
-        <span style="background-color: rgb(255, 255, 255); max-width: 1920px;">&copy; Todos os direitos reservados</span>
+        <span style="background-color: rgb(255, 255, 255); max-width: 1920px;">&copy; Todos los productos reservados</span>
     </footer>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
